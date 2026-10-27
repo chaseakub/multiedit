@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Multiedit by Rex",
+  "version": "0.1.0",
+  "description": "Select text fields, preview a shared edit, and apply it together. Local-only. Built by Chase Kubala and Rex.",
+  "permissions": ["activeTab", "scripting"],
+  "background": { "service_worker": "worker.js" },
+  "icons": { "16": "icons/16.png", "32": "icons/32.png", "48": "icons/48.png", "128": "icons/128.png" },
+  "action": { "default_title": "Open Multiedit", "default_icon": { "16": "icons/16.png", "32": "icons/32.png", "48": "icons/48.png", "128": "icons/128.png" } },
+  "commands": {
+    "toggle-multiedit": {
+      "suggested_key": { "default": "Alt+Shift+E", "mac": "Alt+Shift+E" },
+      "description": "Open or close Multiedit"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiedit integration fixture</title>
+    <style>
+      body { margin: 20px; font: 14px system-ui; }
+      main { width: 720px; }
+      form, .field-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 16px; }
+      label { display: flex; flex-direction: column; gap: 3px; }
+      input, textarea, select, [contenteditable] { box-sizing: border-box; width: 100%; padding: 6px; }
+      textarea { height: 60px; }
+      button { padding: 7px; }
+      output { display: block; white-space: pre-wrap; overflow-wrap: anywhere; }
+      .wide { grid-column: 1 / -1; }
+      .actions { display: flex; gap: 8px; flex-wrap: wrap; margin: 12px 0; }
+      fieldset { margin: 0; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Real browser form</h1>
+      <div id="react-root"></div>
+    </main>
+    <script type="module" src="/tests/fixtures/form.jsx"></script>
+  </body>
+</html>
